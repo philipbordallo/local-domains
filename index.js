@@ -1,6 +1,6 @@
 const os = require('os');
 
-const DEFAULT_TYPES = ['dev', 'meh', 'xip.io', 'name.xip.io'];
+const DEFAULT_TYPES = ['dev', 'meh', 'xip', 'name.xip', 'www.name.xip'];
 
 function localDomains(name, types = DEFAULT_TYPES) {
 	const ip = os.networkInterfaces().en0.filter(networkInterface => networkInterface.family === 'IPv4')[0];
@@ -11,6 +11,9 @@ function localDomains(name, types = DEFAULT_TYPES) {
 		}
 		else if (type === 'name.xip' || type === 'name.xip.io') {
 			return `${name}.${ip.address}.xip.io`;
+		}
+		else if (type === 'www.name.xip' || type === 'www.name.xip.io') {
+			return `www.${name}.${ip.address}.xip.io`;
 		}
 
 		return `${name}.${type}`;

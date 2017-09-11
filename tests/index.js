@@ -12,7 +12,8 @@ test('Return a list given no tlds', t => {
 		'my-cool-site.dev',
 		'my-cool-site.meh',
 		`${ip.address}.xip.io`,
-		`my-cool-site.${ip.address}.xip.io`
+		`my-cool-site.${ip.address}.xip.io`,
+		`www.my-cool-site.${ip.address}.xip.io`
 	];
 
 	t.deepEqual(result, expected)

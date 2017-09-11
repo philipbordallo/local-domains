@@ -14,7 +14,13 @@ npm install --save-dev local-domains
 const localDomains = require('localDomains');
 
 localDomains('my-cool-site');
-// => ['my-cool-site.dev', 'my-cool-site.meh', '10.9.8.7.xip.io', 'my-cool-site.10.9.8.7.xip.io']
+// => [
+//  'my-cool-site.dev', 
+//  'my-cool-site.meh', 
+//  '10.9.8.7.xip.io', 
+//  'my-cool-site.10.9.8.7.xip.io', 
+//  'www.my-cool-site.10.9.8.7.xip.io'
+// ]
 ```
 
 You can also pass an `array` of wanted top level domains:
@@ -23,7 +29,11 @@ You can also pass an `array` of wanted top level domains:
 const localDomains = require('localDomains');
 
 localDomains('my-cool-site', ['localdomain', 'thebest', 'xip']);
-// => ['my-cool-site.localdomain', 'my-cool-site.thebest', '10.9.8.7.xip.io']
+// => [
+//  'my-cool-site.localdomain', 
+//  'my-cool-site.thebest', 
+//  '10.9.8.7.xip.io'
+// ]
 ```
 
 This works great if you want to set the `allowedHosts` in webpack:
@@ -58,7 +68,7 @@ hostList.forEach(host => {
 Returns an `array` of domains.
 
 #### Parameter `name`
-A `string`.
+A **required** `string`.
 
 #### Parameter `types`
-An `array` of top level domains, with the default of `['dev', 'meh', 'xip.io', 'name.xip.io']`. You can pass `['xip']` or `['xip.io']` and you will get `[IP.xip.io]`.
+An **optional** `array` of top level domains, with the default of `['dev', 'meh', 'xip', 'name.xip', www.name.xip]`. You can pass `['xip']` or `['xip.io']` and you will get `[IP.xip.io]`.
