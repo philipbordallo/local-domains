@@ -3,6 +3,11 @@ local-domains
 > Returns a list of local domains
 
 
+## Install
+```
+npm install --save-dev local-domains
+```
+
 ## Examples
 
 ```js

@@ -14,7 +14,11 @@
   "keywords": [
     "local",
     "host",
-    "domain"
+    "domain",
+    "pow",
+    "mehserve",
+    "webpack",
+    "allowedhosts"
   ],
   "author": "Philip Bordallo",
   "license": "MIT",

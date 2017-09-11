@@ -1,8 +1,8 @@
 const os = require('os');
 
-const DEFAULT_LIST_TYPES = ['dev', 'meh', 'xip.io', 'name.xip.io'];
+const DEFAULT_TYPES = ['dev', 'meh', 'xip.io', 'name.xip.io'];
 
-function localDomains(name, types = DEFAULT_LIST_TYPES) {
+function localDomains(name, types = DEFAULT_TYPES) {
 	const ip = os.networkInterfaces().en0.filter(networkInterface => networkInterface.family === 'IPv4')[0];
 
 	return types.map(type => {
