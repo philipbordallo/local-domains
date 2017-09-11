@@ -1,0 +1,24 @@
+{
+  "name": "local-domains",
+  "version": "1.0.0",
+  "description": "Returns a list of local domains",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipbordallo/local-domains.git"
+  },
+  "keywords": [
+    "local",
+    "host",
+    "domain"
+  ],
+  "author": "Philip Bordallo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipbordallo/local-domains/issues"
+  },
+  "homepage": "https://github.com/philipbordallo/local-domains#readme"
+}
