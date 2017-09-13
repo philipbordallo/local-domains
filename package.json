@@ -1,6 +1,6 @@
 {
   "name": "local-domains",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Returns a list of local domains",
   "main": "index.js",
   "scripts": {
