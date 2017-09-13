@@ -3,7 +3,7 @@ const os = require('os');
 
 const localDomains = require('../index.js');
 
-
+const interfaces = os.networkInterfaces();
 const ip = Object.keys(interfaces)
 	.reduce((a, item) => a.concat(interfaces[item]), [])
 	.find(({ internal, family }) => !internal && family === 'IPv4');
