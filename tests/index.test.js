@@ -4,7 +4,9 @@ const os = require('os');
 const localDomains = require('../index.js');
 
 
-const ip = os.networkInterfaces().en0.filter(networkInterface => networkInterface.family === 'IPv4')[0];
+const ip = Object.keys(interfaces)
+	.reduce((a, item) => a.concat(interfaces[item]), [])
+	.find(({ internal, family }) => !internal && family === 'IPv4');
 
 test('Return a list given no tlds', t => {
 	const result = localDomains('my-cool-site')
