@@ -4,8 +4,8 @@
   "description": "Returns a list of local domains",
   "main": "index.js",
   "scripts": {
-    "test": "ava --verbose tests",
-    "test-watch": "ava --watch tests"
+    "test": "ava tests",
+    "test-watch": "ava --watch --verbose tests"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
     "pow",
     "mehserve",
     "webpack",
+    "allowed",
+    "hosts",
     "allowedhosts"
   ],
   "author": "Philip Bordallo",

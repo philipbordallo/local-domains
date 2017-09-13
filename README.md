@@ -2,8 +2,12 @@ local-domains
 =============
 > Returns a list of local domains
 
+[![npm](https://img.shields.io/npm/v/local-domains.svg)](https://www.npmjs.com/package/local-domains)
+
+[![David](https://img.shields.io/david/philipbordallo/local-domains.svg)](https://david-dm.org/philipbordallo/local-domains) [![David](https://img.shields.io/david/dev/philipbordallo/local-domains.svg)](https://david-dm.org/philipbordallo/local-domains?type=dev)
 
 ## Install
+With [npm](https://www.npmjs.com/package/local-domains):
 ```
 npm install --save-dev local-domains
 ```
