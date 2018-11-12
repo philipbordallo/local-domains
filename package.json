@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/philipbordallo/local-domains#readme",
   "devDependencies": {
-    "ava": "^0.22.0"
+    "ava": "^0.25.0"
   }
 }
